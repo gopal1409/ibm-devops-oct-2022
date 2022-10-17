@@ -29,3 +29,19 @@ sudo -i
    28  git commit -m "intial commit"
    29  git log
 
+###.gitignore
+ 31  nano calcy.py
+   32  git status
+   33  git add .
+   34  git status
+   35  git reset
+   36  git status
+   37  touch .gitignore
+   38  nano .gitignore
+   ###to save the file press ctrl x then press y
+   39  git status
+   40  ls
+  
+   42  git add .
+   43  git commit -m "we started calcy app"
+   git log
