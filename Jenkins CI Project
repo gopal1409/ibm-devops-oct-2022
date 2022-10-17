@@ -1,0 +1,13 @@
+ 177  cd /root
+  178  git clone https://github.com/gopal1409/springboot-chat-app.git
+  179  cd springboot-chat-app/
+  180  ls
+  181  rm -rf .git
+  182  git init
+  183  git add .
+  184  git commit -m "spring app"
+  185  git log
+  ####create a new repo in your own github repo type should be pvt.
+  ##copy the remote url and paste in your spring chat app folder and upload the same in your own github
+  186  git remote add origin git@github.com:gopal1409/spring-chat-app-oct.git
+  187  git push origin master
