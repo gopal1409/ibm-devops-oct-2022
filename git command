@@ -45,3 +45,11 @@ sudo -i
    42  git add .
    43  git commit -m "we started calcy app"
    git log
+   
+   ###git diff will show the difference between previous commit and the changes int he file
+    48  nano calcy.py
+   49  git diff
+   50  git add .
+   51  git commit -m "new feature added"
+   52  git log
+
