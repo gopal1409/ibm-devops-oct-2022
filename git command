@@ -52,4 +52,7 @@ sudo -i
    50  git add .
    51  git commit -m "new feature added"
    52  git log
+##3how to generate ssh key and upload in github
+ 54  ssh-keygen -t rsa
+   55  cat /root/.ssh/id_rsa.pub
 
