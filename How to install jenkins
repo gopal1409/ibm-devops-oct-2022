@@ -1,0 +1,10 @@
+##3login to the first server
+sudo -i
+ 167  apt install default-jdk
+  168  apt-get update
+  169  apt install maven
+  170  curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo tee   /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+  171  echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]   https://pkg.jenkins.io/debian-stable binary/ | sudo tee   /etc/apt/sources.list.d/jenkins.list > /dev/null
+  172  apt-get update
+  173  apt install jenkins
+  174  systemctl status jenkins
