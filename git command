@@ -22,4 +22,10 @@ sudo -i
    21  git status
    22  git init
 
+#####create our first version
+  25  git status
+   26  git add calcy.py
+   27  git status
+   28  git commit -m "intial commit"
+   29  git log
 
