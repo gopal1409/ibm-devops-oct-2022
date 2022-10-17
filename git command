@@ -55,4 +55,23 @@ sudo -i
 ##3how to generate ssh key and upload in github
  54  ssh-keygen -t rsa
    55  cat /root/.ssh/id_rsa.pub
+####git branch
+  67  git branch
+   68  git branch add
+   69  git branch
+   70  ls
+   71  git checkout add
+   72  git branch
+   73  cat calcy.py
+   74  nano calcy.py
+   75  git status
+   76  git add .
+   77  git commit -m "new branch modification"
+   78  git status
+   79  git log
+   80  git checkout master
+   81  git status
+   82  cat calcy.py
+   83  git checkout add
+   84  git push origin addd
 
