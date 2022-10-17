@@ -1,0 +1,8 @@
+sudo -i
+###creating global varaible in git. 
+    1  git config --help
+    2  git config --global user.name "Gopal Das"
+     4  git config --global user.email "gopal1409@gmail.com"
+    5  git config --list
+    6  history
+
