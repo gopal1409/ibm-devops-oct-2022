@@ -74,4 +74,22 @@ sudo -i
    82  cat calcy.py
    83  git checkout add
    84  git push origin addd
+##git merge
+cd ..
+ 115  mkdir git-merge
+  116  cd git-merge/
+  117  git init .
+  118  echo "this is some content to mess with" > merge.txt
+  119  git add .
+  120  git commit -am "intial commit"
+  121  git branch
+  122  git checkout -n newbranch
+  123  git checkout -b newbranch
+  124  echo "totally different content to merge later" > merge.txt
+  125  git commit -am "edited the content"
+  126  git checkout master
+  127  git commit -am "append content to merge"
+  128  git merge newbranch
+  129  cat merge.txt
+  130  git config --add merge.ff false
 
