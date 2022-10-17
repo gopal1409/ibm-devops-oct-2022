@@ -8,3 +8,5 @@ sudo -i
   172  apt-get update
   173  apt install jenkins
   174  systemctl status jenkins
+#########how to unlock jenkins
+ cat /var/lib/jenkins/secrets/initialAdminPassword
