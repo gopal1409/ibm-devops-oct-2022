@@ -92,4 +92,19 @@ cd ..
   128  git merge newbranch
   129  cat merge.txt
   130  git config --add merge.ff false
+###git stach will happen only if there is a refrence in any of the commit
+ 150  nano style.css
+  151  git add style.css
+  152  nano index.html
+  153  git status
+  154  git stash
+  155  git status
+  156  git stash pop
+  157  git status
+  158  git stash apply
+  159  git status
+  160  touch test
+  161  git status
+  162  git stash
+  163  git status
 
