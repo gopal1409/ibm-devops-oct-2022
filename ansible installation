@@ -10,3 +10,5 @@ cat /root/.ssh/id_ras.pub
 hostnamectl set-hostname --static client
 ###copy the ssh public key from the master machine and paste it inside the file at the end
  vi /root/.ssh/authorized_keys
+###to verify the ssh connection
+ssh root@client
