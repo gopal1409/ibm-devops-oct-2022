@@ -10,7 +10,20 @@ pipeline {
         stage('scm integration') {
             steps {
                
-                echo "hello"
+               git credentialsId: 'git-credentails', url: 'git@github.com:gopal1409/spring-chat-app-oct.git'
+            }
+        }
+        stage('mvn build') {
+            steps {
+               
+              sh 'mvn -Dmaven.test.failure.ignore=true clean package'
+            }
+        }
+        stage('unit test') {
+            steps {
+               
+              sh 'mvn test'
+              junit '**/target/surefire-reports/*.xml'
             }
         }
     }
