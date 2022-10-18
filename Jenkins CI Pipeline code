@@ -17,13 +17,23 @@ pipeline {
             steps {
                
               sh 'mvn -Dmaven.test.failure.ignore=true clean package'
+              //sh 'python app.py'
+              // sh 'npm run'
+              
             }
         }
         stage('unit test') {
             steps {
-               
+               //sh 'python xunit'
               sh 'mvn test'
               junit '**/target/surefire-reports/*.xml'
+            }
+        }
+        stage('checkstyle') {
+            steps {
+               //sh 'python xunit'
+              sh 'mvn checkstyle:checkstyle'
+              //junit '**/target/surefire-reports/*.xml'
             }
         }
     }
