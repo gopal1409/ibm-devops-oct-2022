@@ -1,0 +1,12 @@
+##3master machine config
+sudo -i
+hostnamectl set-hostname --static ansiblemaster
+apt install ansible
+###inside the host file add the public ip then put a space and give the name as client
+vi /etc/hosts
+cat /root/.ssh/id_ras.pub
+
+#####loging to the second vm
+hostnamectl set-hostname --static client
+###copy the ssh public key from the master machine and paste it inside the file at the end
+ vi /root/.ssh/authorized_keys
