@@ -1,7 +1,7 @@
 mkdir nexus
 cd nexus
 23  docker pull sonatype/nexus
-25  vi docker-compose.yml
+25  nano docker-compose.yml
 
 version: "3"
 services:
