@@ -1,0 +1,4 @@
+  197  git clone https://github.com/gopal1409/ibm-devops-oct-ansible-22.git
+  198  cd ibm-devops-oct-ansible-22/
+  199  ansible-playbook motd.yml
+  200  ssh root@client
