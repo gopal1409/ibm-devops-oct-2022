@@ -9,3 +9,6 @@ docker ps
   255  docker ps
   256  history
   257  docker images
+  
+  ####detach
+  docker container run --publish 84:80 nginx
