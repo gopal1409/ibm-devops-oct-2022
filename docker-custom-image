@@ -1,0 +1,11 @@
+ 291  mkdir test
+  292  cd test/
+  293  git clone https://github.com/gopal1409/springboot-chat-app.git
+  294  ls
+  295  cd springboot-chat-app/
+  296  ls
+  297  mvn clean package
+  298  ls
+  299  cd target/
+  300  ls
+  301  cd ..
