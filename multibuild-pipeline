@@ -1,0 +1,25 @@
+ 249  mkdir multi
+  250  cd multi/
+  251  vi Jenkinsfile
+  252  git init
+  253  git add .
+  254  git commit -m "Jenkins CI Pipeline"
+  255  git branch
+  256  git branch ansible
+  257  git checkout ansible
+  258  vi Jenkinsfile
+  259  git add .
+  260  git commit -m "Jenkins ansible pipeline"
+  261  git checkout master
+  262  git branch docker
+  263  git checkout docker
+  264  vi Jenkinsfile
+  265  git add .
+  266  git commit -m "docker pipeline"
+  267  git checkout master
+  268  git remote add origin git@github.com:gopal1409/ibm-ci-ansible-docker-oct.git
+  269  git push origin master
+  270  git checkout ansible
+  271  git push origin ansible
+  272  git checkout docker
+  273  git push origin docker
