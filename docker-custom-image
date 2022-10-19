@@ -9,3 +9,17 @@
   299  cd target/
   300  ls
   301  cd ..
+  
+  ###create the docker file to build imageFROM openjdk:20-slim-buster
+
+   303  vi dockerfile
+   ####inside docker file add this content
+FROM openjdk:20-slim-buster
+ARG JAR_FILE=target/*.jar
+COPY ${JAR_FILE} application.jar
+EXPOSE 8080
+ENTRYPOINT ["java","-jar","/application.jar"]
+
+  304  docker build -t chatapp .
+  305  docker images
+
