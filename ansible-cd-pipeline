@@ -1,0 +1,9 @@
+ 251  git clone https://github.com/gopal1409/ansible-cd-pipeline-ibm-devops-oct22.git
+  252  cd ansible-cd-pipeline-ibm-devops-oct22/
+  255  rm -rf .git
+  256  git init
+  257  git add .
+  258  git commit -m "ansible project for jenkins"
+  ###create a new pvt repo in github
+  259  git remote add origin git@github.com:gopal1409/-ansible-cd-pipeline-ibm-devops-oct221.git
+  260  git push -u origin master
