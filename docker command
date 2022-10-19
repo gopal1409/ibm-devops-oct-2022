@@ -4,3 +4,8 @@ docker ps
   253  docker ps
   254  docker container run --publish 81:80 --detach httpd
   255  docker ps
+##3docker image
+ 254  docker container run --publish 82:80 --detach nginx
+  255  docker ps
+  256  history
+  257  docker images
