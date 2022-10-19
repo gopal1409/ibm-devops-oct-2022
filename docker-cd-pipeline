@@ -1,4 +1,10 @@
 pipeline {
+    environment {
+        //change the ip address of registry to your registry
+        registry = '44.230.9.227:8085/chatapp'
+        registryCredential = 'nexus-cred'
+        dockerImage = ''
+    }
     agent any
 
    // tools {
@@ -22,7 +28,20 @@ pipeline {
         stage('build image') {
             steps {
                 // Get some code from a GitHub repository
-                echo "test"
+                script {
+                    dockerImage=docker.build registry + "$BUILD_NUMBER"
+                }
+            }
+        }
+        stage('push image') {
+            steps {
+                // Get some code from a GitHub repository
+                script {
+                    // This step should not normally be used in your script. Consult the inline help for details.
+                      withDockerRegistry(credentialsId: 'nexus-cred', url: 'http://44.230.9.227:8085') {
+                       dockerImage.push()
+                    }
+                }
             }
         }
     
