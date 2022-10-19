@@ -21,7 +21,7 @@ pipeline {
         stage('scm stage') {
             steps {
                 // Get some code from a GitHub repository
-                ###go to pipeline syntax generator provide teh github and use the same auth
+              //  ###go to pipeline syntax generator provide teh github and use the same auth
              git credentialsId: 'git-credentails', url: 'git@github.com:gopal1409/-ansible-cd-pipeline-ibm-devops-oct221.git'   
             }
         }
