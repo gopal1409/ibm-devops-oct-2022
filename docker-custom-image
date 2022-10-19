@@ -26,3 +26,9 @@ ENTRYPOINT ["java","-jar","/application.jar"]
 ##3check the image history which will verify the image writable laye
   308  docker images
   309  docker image history 223b98a0e4e1
+##3how to upload your docker image
+  312  docker images
+  313  docker tag 223b98a0e4e1 gopal1409/chatapp:v1
+  314  docker images
+  315  docker login
+  316  docker push gopal1409/chatapp:v1
