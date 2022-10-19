@@ -32,3 +32,13 @@ ENTRYPOINT ["java","-jar","/application.jar"]
   314  docker images
   315  docker login
   316  docker push gopal1409/chatapp:v1
+  
+  ###how to upload image to docker insecure registry
+    249  vi /etc/docker/daemon.json
+    ##3inside this file add this block and replace the public ip with your own nexus public ip
+    {
+      "insecure-registries" : ["44.230.9.227:8085"]
+    }
+  250  systemctl restart docker
+  251  docker info
+
