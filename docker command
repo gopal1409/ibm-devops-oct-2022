@@ -12,3 +12,14 @@ docker ps
   
   ####detach
   docker container run --publish 84:80 nginx
+  ##3container are process
+   271  docker run -p 85:80 -d --name webhost nginx
+  272  docker ps
+  273  top
+  274  docker top webhost
+  275  ps aux
+  276  docker top webhost
+  277  kill -9 13282
+  278  docker ps
+  279  docker ps -a
+
