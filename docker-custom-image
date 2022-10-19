@@ -23,3 +23,6 @@ ENTRYPOINT ["java","-jar","/application.jar"]
   304  docker build -t chatapp .
   305  docker images
 
+##3check the image history which will verify the image writable laye
+  308  docker images
+  309  docker image history 223b98a0e4e1
